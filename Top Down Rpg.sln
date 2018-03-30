@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Down Rpg", "Top Down Rpg.csproj", "{33FC2123-5830-2F04-4BE0-87D9ACF5BE41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Down Rpg.Plugins", "Top Down Rpg.Plugins.csproj", "{D25DD8F8-CAEC-1334-ABAD-100D735A954B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Down Rpg.Editor", "Top Down Rpg.Editor.csproj", "{ABFCC948-D625-5A0D-B56E-5A5810553D64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33FC2123-5830-2F04-4BE0-87D9ACF5BE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FC2123-5830-2F04-4BE0-87D9ACF5BE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FC2123-5830-2F04-4BE0-87D9ACF5BE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FC2123-5830-2F04-4BE0-87D9ACF5BE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D25DD8F8-CAEC-1334-ABAD-100D735A954B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25DD8F8-CAEC-1334-ABAD-100D735A954B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25DD8F8-CAEC-1334-ABAD-100D735A954B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25DD8F8-CAEC-1334-ABAD-100D735A954B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFCC948-D625-5A0D-B56E-5A5810553D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFCC948-D625-5A0D-B56E-5A5810553D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFCC948-D625-5A0D-B56E-5A5810553D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFCC948-D625-5A0D-B56E-5A5810553D64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
