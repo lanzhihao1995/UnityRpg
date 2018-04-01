@@ -5,11 +5,11 @@ using UnityEngine;
 public class LoginController : Controller {
 
     public override void InitServer() {
-        throw new System.NotImplementedException();
+        return;
     }
 
     public override void InitView() {
-        IView view = new LoginModule();
+        LoginModule view = new LoginModule();
         this.SetView( view );
     }
 }

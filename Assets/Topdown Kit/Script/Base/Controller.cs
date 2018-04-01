@@ -6,6 +6,11 @@ public abstract class Controller : IController {
 
     private IView __view__;
 
+    public Controller() {
+        this.InitServer();
+        this.InitView();
+    }
+
     public void GetView() {
         throw new System.NotImplementedException();
     }
@@ -26,10 +31,19 @@ public abstract class Controller : IController {
     }
 
     public void SetView(IView view) {
-        throw new System.NotImplementedException();
+        this.__view__ = view;
     }
 
-    public void Show(string res_path) {
-        this.__view__.Show(res_path);
+    public IView View {
+        get {
+            return this.__view__;
+        }
+        set {
+            this.__view__ = value;
+        }
     }
+
+    //public void Show(string res_path) {
+    //    this.__view__.Show(res_path);
+    //}
 }

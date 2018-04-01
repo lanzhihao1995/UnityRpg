@@ -7,7 +7,7 @@ public interface IController {
     /// <summary>
     /// 显示模块
     /// </summary>
-    void Show( string res_path );
+    //void Show( string res_path );
     /// <summary>
     /// 隐藏模块
     /// </summary>

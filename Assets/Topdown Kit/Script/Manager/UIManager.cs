@@ -4,7 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UIManager : Manager {
-    
+
+    private Transform _uiRoot;
+
+    private void Start() {
+        _uiRoot = GameObject.Find( "GUI_ROOT" ).transform;
+    }
+
     /// <summary>
     /// 动态加载UI资源
     /// </summary>
@@ -17,11 +23,16 @@ public class UIManager : Manager {
             Debug.LogError( "资源加载错误：" + res_path );
             return;
         }
+        else {
+            GameObject temp = GameObject.Instantiate( go );
+            temp.transform.parent = _uiRoot;
+        }
         if ( callBack != null ) {
             callBack( go );
         }
 #else
         Debug.LogError( "暂时不支持此平台" );
 #endif
+        
     }
 }

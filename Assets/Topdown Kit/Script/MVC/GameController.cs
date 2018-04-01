@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class GameController {
 
-    static LoginController _login;
+    private static LoginController login;
 
-	public GameController() {
-        _login = new LoginController();
+    public static LoginController Login {
+        get {
+            if(login == null ) {
+                login = new LoginController();
+            }
+            return login;
+        }
     }
+
+
+	//public GameController() {
+ //       login = new LoginController();
+ //   }
 }

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoginModule : View {
-    
-    public void Show() {
-        base.Show( "UI/Login/LoginModule" );
+public class LoginModule : BaseView {
+
+    public void Show(string path) {
+        base.Show("UI/Login/LoginModule");
     }
 
 
