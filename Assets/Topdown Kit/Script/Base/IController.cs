@@ -3,11 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public interface IController {
-
-    /// <summary>
-    /// 显示模块
-    /// </summary>
-    //void Show( string res_path );
+    
     /// <summary>
     /// 隐藏模块
     /// </summary>
@@ -32,4 +28,8 @@ public interface IController {
     /// 初始化模块
     /// </summary>
     void InitView();
+    /// <summary>
+    /// 显示或隐藏
+    /// </summary>
+    void ShowOrHide();
 }

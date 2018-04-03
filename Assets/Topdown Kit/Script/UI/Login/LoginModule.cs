@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class LoginModule : BaseView {
 
-    public void Show(string path) {
+
+    public override void OnShow() {
+        base.Show( "UI/Login/LoginModule" );
+    }
+
+    public new void Show(string path = null) {
         base.Show("UI/Login/LoginModule");
     }
 

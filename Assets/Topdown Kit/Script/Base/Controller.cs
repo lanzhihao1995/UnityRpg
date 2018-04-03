@@ -43,7 +43,7 @@ public abstract class Controller : IController {
         }
     }
 
-    //public void Show(string res_path) {
-    //    this.__view__.Show(res_path);
-    //}
+    public void ShowOrHide() {
+        this.View.ShowOrHide();
+    }
 }

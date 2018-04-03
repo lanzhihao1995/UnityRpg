@@ -16,10 +16,11 @@ public class GameManager : Manager {
         //    return;
         //}
         AppFacade.Instance.AddManager<UIManager>( "UIManager" );
+        GameController.Init();
     }
 
     private void Start() {
-        GameController.Login.View.Show( "UI/Login/LoginModule" );
+        GameController.Login.ShowOrHide();
     }
 
     /// <summary>

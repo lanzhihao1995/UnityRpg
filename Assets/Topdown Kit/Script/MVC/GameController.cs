@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class GameController {
 
-    private static LoginController login;
+    public static LoginController Login { get; private set; }
 
-    public static LoginController Login {
-        get {
-            if(login == null ) {
-                login = new LoginController();
-            }
-            return login;
-        }
+
+    public static void Init() {
+        Login = new LoginController();
     }
 
 

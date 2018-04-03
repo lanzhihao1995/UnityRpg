@@ -3,24 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseView : IView {
+public abstract class BaseView : IView {
 
     protected UIManager _uiManager;
-    protected GameObject _ui;
-    protected bool isHide = false;
+    protected GameObject UI { get; set; }
+    protected bool isHide;
 
-    public void Show( string res_path ) {
+    public void Show( string res_path = null ) {
         _uiManager = AppFacade.Instance.GetManager<UIManager>( "UIManager" );
         _uiManager.LoadUIGameObject( res_path, delegate(GameObject go) {
-            _ui = go;
+            UI = go;
             isHide = true;
         } );
     }
 
-    protected GameObject UI {
-        get { return _ui; }
-        set { _ui = value; }
-    }
+    public abstract void OnShow();
 
     public void Hide() {
         if ( !isHide ) {
@@ -30,6 +27,7 @@ public class BaseView : IView {
 
     public void ShowOrHide() {
         if ( !isHide ) {
+            OnShow();
             //this.Show();
         }
     }
