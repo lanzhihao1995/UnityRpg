@@ -16,6 +16,7 @@ public class GameManager : Manager {
         //    return;
         //}
         AppFacade.Instance.AddManager<UIManager>( "UIManager" );
+        AppFacade.Instance.GetManager<UIManager>( "UIManager" ).InitUIRoot();
         GameController.Init();
     }
 
@@ -31,9 +32,9 @@ public class GameManager : Manager {
         GameObject _uiRoot = null;
         UIManager.LoadUIGameObject( res_path, delegate ( GameObject go ) {
             _uiRoot = go;
-        } );
+        }, -1 );
         if( _uiRoot != null ) {
-            _uiRoot = Instantiate( _uiRoot ) as GameObject;
+            //_uiRoot = Instantiate( _uiRoot ) as GameObject;
             _uiRoot.name = "GUI_ROOT";
             DontDestroyOnLoad( _uiRoot );
         }

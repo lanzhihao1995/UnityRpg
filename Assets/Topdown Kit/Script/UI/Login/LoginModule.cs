@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LoginModule : BaseView {
 
+    public LoginModule() {
+        this.layer = LayerManager.Window;
+    }
 
     public override void OnShow() {
         base.Show( "UI/Login/LoginModule" );
