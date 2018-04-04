@@ -5,6 +5,7 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ButtonOK : MonoBehaviour {
 	
@@ -44,6 +45,6 @@ public class ButtonOK : MonoBehaviour {
 	
 	void LoadScene()
 	{
-		Application.LoadLevel(loadSceneName);;	
+        SceneManager.LoadScene( loadSceneName );
 	}
 }

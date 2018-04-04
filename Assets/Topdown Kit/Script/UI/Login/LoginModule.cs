@@ -8,11 +8,7 @@ public class LoginModule : BaseView {
         this.layer = LayerManager.Window;
     }
 
-    public override void OnShow() {
-        base.Show( "UI/Login/LoginModule" );
-    }
-
-    public new void Show(string path = null) {
+    public override void Show(string path = null) {
         base.Show("UI/Login/LoginModule");
     }
 
