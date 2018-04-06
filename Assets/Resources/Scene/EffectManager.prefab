@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1512752860129472}
+  m_IsPrefabParent: 1
+--- !u!1 &1512752860129472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4560265947310442}
+  - component: {fileID: 114725392203054060}
+  m_Layer: 0
+  m_Name: EffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4560265947310442
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1512752860129472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114725392203054060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1512752860129472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df0900eb1b4aab74faf6d24d76e1ff5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FilterLevel: 2
+  m_CurrentWidget: 0
+  m_ResPath: effect/{0}.prefab
+  m_IndependentWidget:
+    _keys: 
+    _values: 
+  m_IntervalWidget:
+  - start: 1105001
+    end: 1105999
+    widget: 7
+  - start: 1106001
+    end: 1106999
+    widget: 8
+  - start: 1107001
+    end: 1107999
+    widget: 7
+  - start: 1201001
+    end: 1201999
+    widget: 9
+  - start: 1202001
+    end: 1202999
+    widget: 6
+  - start: 1203001
+    end: 1203999
+    widget: 5
+  - start: 1204001
+    end: 1204999
+    widget: 7
+  - start: 1205001
+    end: 1205999
+    widget: 5
+  - start: 1301001
+    end: 1301999
+    widget: 6
+  - start: 1303001
+    end: 1303999
+    widget: 4
+  - start: 1401001
+    end: 1401999
+    widget: 6
+  - start: 1502001
+    end: 1502999
+    widget: 2
+  - start: 1503001
+    end: 1503999
+    widget: 3
+  - start: 1504001
+    end: 1504999
+    widget: 3
+  - start: 2101001
+    end: 2101999
+    widget: 9
+  - start: 2102001
+    end: 2102999
+    widget: 8
+  - start: 2103001
+    end: 2103999
+    widget: 6
+  - start: 2201001
+    end: 2201999
+    widget: 9
+  - start: 2202001
+    end: 2202999
+    widget: 8
+  - start: 2301000
+    end: 2301999
+    widget: 6
+  - start: 2302001
+    end: 2302999
+    widget: 4
+  - start: 4100001
+    end: 4100099
+    widget: 6
+  - start: 4200001
+    end: 4200999
+    widget: 6
+  - start: 11030001
+    end: 11701999
+    widget: 2

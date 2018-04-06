@@ -16,7 +16,7 @@ public class UIManager : Manager {
     /// </summary>
     /// <param name="res_path">在Resources文件夹下的路径，不需要带上后缀</param>
     /// <param name="callBack"></param>
-    public void LoadUIGameObject(string res_path, Action<GameObject> callBack, int layer ) {
+    public void LoadUIGameObject(string res_path, int layer, Action<GameObject> callBack = null ) {
 #if UNITY_EDITOR
         GameObject go = Resources.Load( res_path ) as GameObject;
         if(go == null ) {
@@ -25,7 +25,11 @@ public class UIManager : Manager {
         }
         else {
             go = Instantiate( go );
-            go.transform.parent = _uiRoot;
+            string layerStr;
+            LayerManager.layerDict.TryGetValue( layer, out layerStr );
+            if (layer != LayerManager.None ) {
+                go.transform.parent = _uiRoot.Find( layerStr );
+            }
             if ( !go.activeSelf ) {
                 go.SetActive( true );
             }
@@ -38,5 +42,19 @@ public class UIManager : Manager {
         Debug.LogError( "暂时不支持此平台" );
 #endif
         
+    }
+
+    /// <summary>
+    /// 添加UI节点到父节点   --TODO 为刷新深度
+    /// </summary>
+    /// <param name="parentGo"></param>
+    /// <param name="childGo"></param>
+    public void AddChild(GameObject parentGo, GameObject childGo ) {
+        if ( childGo.activeSelf ) {
+            childGo.SetActive( false );
+        }
+        NGUITools.AddChild2( parentGo, childGo );
+        NGUITools.SetLayer( childGo, parentGo.layer );
+        childGo.SetActive( true );
     }
 }

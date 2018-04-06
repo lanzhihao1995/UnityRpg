@@ -3,38 +3,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseView : IView {
+public class BaseView : MonoBase, IView {
 
     protected UIManager _uiManager;
-    protected GameObject UI { get; set; }
-    protected bool isHide;
+    public GameObject UI { get; set; }
+    protected bool isHide = true;
     protected int layer;
+    protected GameObject _parent;
 
     public virtual void Show( string res_path = null ) {
         _uiManager = AppFacade.Instance.GetManager<UIManager>( "UIManager" );
-        _uiManager.LoadUIGameObject( res_path, delegate(GameObject go) {
+        _uiManager.LoadUIGameObject( res_path, layer, delegate ( GameObject go ) {
             UI = go;
-            isHide = true;
-        }, layer );
+            isHide = false;
+            LoadCallBack();
+            if(_parent != null ) {
+                base.AddChild( this._parent, this.UI );
+            }
+        } );
     }
 
     public void Hide() {
         if ( !isHide ) {
-            
+            this.Dispose();
         }
     }
 
+    public GameObject Parent {
+        set {
+            this._parent = value;
+        }
+    }
+
+    protected virtual void LoadCallBack() {
+
+    }
+
     public void ShowOrHide() {
-        if ( !isHide ) {
+        if ( isHide ) {
             //OnShow();
             this.Show();
         }
     }
 
     public void Dispose() {
+        ObjectPool.Push( this.UI );
         _uiManager = null;
         this.UI = null;
-        this.isHide = false;
+        this.isHide = true;
     }
 
     public bool IsShow() {

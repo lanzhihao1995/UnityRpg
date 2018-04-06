@@ -30,6 +30,8 @@ public class NewGameButton : MonoBehaviour {
 		
 	void LoadScene()
 	{
-		Application.LoadLevel(loadSceneName);;	
-	}
+        Global.SceneName = "Character Creation";
+        SceneCtrl.LoadScene();
+        //Application.LoadLevel(loadSceneName);;	
+    }
 }

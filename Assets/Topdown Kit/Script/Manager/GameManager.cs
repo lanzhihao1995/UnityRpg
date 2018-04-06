@@ -11,13 +11,10 @@ public class GameManager : Manager {
     void Awake() {
         InitUIRoot();
         DontDestroyOnLoad( this );// 防止销毁自己
-        //if (GameController.Login.View == null ) {
-        //    Debug.LogError( "空的！！！！" );
-        //    return;
-        //}
         AppFacade.Instance.AddManager<UIManager>( "UIManager" );
+        AppFacade.Instance.AddManager<AudioManager>( "AudioManager" );
         AppFacade.Instance.GetManager<UIManager>( "UIManager" ).InitUIRoot();
-        GameController.Init();
+        Init();
     }
 
     private void Start() {
@@ -30,13 +27,19 @@ public class GameManager : Manager {
     void InitUIRoot() {
         string res_path = "UI/GUI_ROOT";
         GameObject _uiRoot = null;
-        UIManager.LoadUIGameObject( res_path, delegate ( GameObject go ) {
+        UIManager.LoadUIGameObject( res_path, LayerManager.None, delegate ( GameObject go ) {
             _uiRoot = go;
-        }, -1 );
-        if( _uiRoot != null ) {
+        } );
+        if ( _uiRoot != null ) {
             //_uiRoot = Instantiate( _uiRoot ) as GameObject;
             _uiRoot.name = "GUI_ROOT";
             DontDestroyOnLoad( _uiRoot );
         }
+    }
+
+    void Init() {
+        GameController.Init();
+        LayerManager.Init();
+        ObjectPool.Init();
     }
 }

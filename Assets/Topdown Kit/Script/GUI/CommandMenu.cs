@@ -40,12 +40,12 @@ public class CommandMenu : MonoBehaviour {
 			//when click button status
 			if(GUI.Button(new Rect(status.position.x,status.position.y,status.size.x,status.size.y),"",status.buttonStlye))
 			{
-				GUI_Menu.instance.OpenShortcutMenu("Status");
-				
-			}
-			
-			//when click button inventory
-			if(GUI.Button(new Rect(bag.position.x,bag.position.y,bag.size.x,bag.size.y),"",bag.buttonStlye))
+                //GUI_Menu.instance.OpenShortcutMenu("Status");
+                GameController.MainUI.ShowOrHide();
+            }
+
+            //when click button inventory
+            if (GUI.Button(new Rect(bag.position.x,bag.position.y,bag.size.x,bag.size.y),"",bag.buttonStlye))
 			{
 				GUI_Menu.instance.OpenShortcutMenu("Inventory");
 			}

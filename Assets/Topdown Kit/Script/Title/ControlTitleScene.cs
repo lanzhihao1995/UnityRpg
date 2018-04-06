@@ -9,7 +9,7 @@ using System.Collections;
 public class ControlTitleScene : MonoBehaviour {
 	
 	public Transform targetPoint; //target camera move to point 
-	public AudioSource bgm; //main background music
+	//public AudioSource bgm; //main background music
 	public GameObject titleText,pressStart,buttonNew,buttonLoad,whiteScreen; //button,GUI
 	public AudioClip buttonSound; //button sound effect
 	
@@ -41,7 +41,7 @@ public class ControlTitleScene : MonoBehaviour {
     			whiteScreen.GetComponent<GUITexture>().color = new Color(.5f,.5f,.5f, alpha);
 			}else
 			{
-				bgm.Play();	
+				//bgm.Play();	
 			}
 			
 			if(transform.position.z >= -27.0f)

@@ -13,6 +13,10 @@ namespace Assets.Topdown_Kit.Script.MVC {
         private static Transform poolGo;
         private static Dictionary<string, GameObject> _objDict = new Dictionary<string, GameObject>();
 
+        public static void Init() {
+            poolGo = GameObject.Find( "ObjectPool" ).transform;
+        }
+
         /// <summary>
         /// 将GameObject推入回收池中
         /// </summary>

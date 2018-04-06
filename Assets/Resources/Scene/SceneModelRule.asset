@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -30709004, guid: a5b807c070b1b394e989b0b61dc8c8e5, type: 3}
+  m_Name: SceneModelRule
+  m_EditorClassIdentifier: 
+  searchFilter: 
+  excludePaths: []
+  readableMode: 2
+  scaleFactor: 0
+  importMaterialMode: 0
+  optimizeMeshMode: 1
+  meshCompressMode: 3
+  normalImportMode: 3
+  tangentImportMode: 3
+  colliderMode: 2
+  secondaryUVMode: 0
+  animationMode: 5
+  animationCompressMode: 0
+  uvRangeMode: 0
+  maxVertexCount: 0
+  maxTriangleCount: 0

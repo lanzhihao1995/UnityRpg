@@ -496,6 +496,21 @@ static public class NGUITools
 		return go;
 	}
 
+    public static GameObject AddChild2(GameObject parent, GameObject child ) {
+#if UNITY_EDITOR
+        UnityEditor.Undo.RegisterCreatedObjectUndo( child, "Create Object" );
+#endif
+        if(child != null && parent != null ) {
+            Transform t = child.transform;
+            t.parent = parent.transform;
+            t.localPosition = Vector3.zero;
+            t.localRotation = Quaternion.identity;
+            t.localScale = Vector3.one;
+            child.layer = parent.layer;
+        }
+        return child;
+    }
+
 	/// <summary>
 	/// Instantiate an object and add it to the specified parent.
 	/// </summary>

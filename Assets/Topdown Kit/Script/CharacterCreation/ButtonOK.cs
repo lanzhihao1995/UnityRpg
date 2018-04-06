@@ -45,6 +45,12 @@ public class ButtonOK : MonoBehaviour {
 	
 	void LoadScene()
 	{
-        SceneManager.LoadScene( loadSceneName );
+        Global.SceneName = "Dreamdev Village";
+        //Global.SceneName = "DSWC";
+        SceneCtrl.LoadScene();
+
+        // ≥ı ºªØMainUI
+        //GameController.MainUI.ShowOrHide();
+        //SceneManager.LoadScene( loadSceneName );
 	}
 }

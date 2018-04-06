@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: b12eed081247d4b42bc3266f62e63408
+timeCreated: 1493885280
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: default
+    100002: //RootNode
+    100004: THL:Mesh
+    100006: polySurface1_THL:Mesh
+    100008: THL:Mesh_polySurface2
+    100010: THL:Mesh_polySurface3_polySurface5
+    100012: THL:Mesh_polySurface4_polySurface3
+    100014: THL:Mesh_THL:polySurface2_polySurface27
+    100016: THL:Mesh_THL:polySurface2_polySurface31
+    100018: THL:Mesh_THL:polySurface3_polySurface29
+    100020: THL:Mesh_THL:polySurface3_polySurface31
+    100022: THL:Mesh_THL:polySurface4_THL:polySurface5_polySurface3
+    100024: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface13
+    100026: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface15
+    100028: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface17
+    100030: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface18
+    100032: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface20
+    100034: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface22
+    100036: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface24
+    100038: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface25
+    100040: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface26
+    100042: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface31
+    100044: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface5
+    100046: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface8
+    400000: default
+    400002: //RootNode
+    400004: THL:Mesh
+    400006: polySurface1_THL:Mesh
+    400008: THL:Mesh_polySurface2
+    400010: THL:Mesh_polySurface3_polySurface5
+    400012: THL:Mesh_polySurface4_polySurface3
+    400014: THL:Mesh_THL:polySurface2_polySurface27
+    400016: THL:Mesh_THL:polySurface2_polySurface31
+    400018: THL:Mesh_THL:polySurface3_polySurface29
+    400020: THL:Mesh_THL:polySurface3_polySurface31
+    400022: THL:Mesh_THL:polySurface4_THL:polySurface5_polySurface3
+    400024: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface13
+    400026: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface15
+    400028: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface17
+    400030: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface18
+    400032: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface20
+    400034: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface22
+    400036: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface24
+    400038: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface25
+    400040: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface26
+    400042: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface31
+    400044: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface5
+    400046: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface8
+    2300000: default
+    2300002: THL:Mesh
+    2300004: polySurface1_THL:Mesh
+    2300006: THL:Mesh_polySurface2
+    2300008: THL:Mesh_polySurface3_polySurface5
+    2300010: THL:Mesh_polySurface4_polySurface3
+    2300012: THL:Mesh_THL:polySurface2_polySurface27
+    2300014: THL:Mesh_THL:polySurface2_polySurface31
+    2300016: THL:Mesh_THL:polySurface3_polySurface29
+    2300018: THL:Mesh_THL:polySurface3_polySurface31
+    2300020: THL:Mesh_THL:polySurface4_THL:polySurface5_polySurface3
+    2300022: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface13
+    2300024: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface15
+    2300026: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface17
+    2300028: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface18
+    2300030: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface20
+    2300032: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface22
+    2300034: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface24
+    2300036: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface25
+    2300038: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface26
+    2300040: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface31
+    2300042: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface5
+    2300044: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface8
+    3300000: default
+    3300002: THL:Mesh
+    3300004: polySurface1_THL:Mesh
+    3300006: THL:Mesh_polySurface2
+    3300008: THL:Mesh_polySurface3_polySurface5
+    3300010: THL:Mesh_polySurface4_polySurface3
+    3300012: THL:Mesh_THL:polySurface2_polySurface27
+    3300014: THL:Mesh_THL:polySurface2_polySurface31
+    3300016: THL:Mesh_THL:polySurface3_polySurface29
+    3300018: THL:Mesh_THL:polySurface3_polySurface31
+    3300020: THL:Mesh_THL:polySurface4_THL:polySurface5_polySurface3
+    3300022: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface13
+    3300024: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface15
+    3300026: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface17
+    3300028: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface18
+    3300030: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface20
+    3300032: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface22
+    3300034: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface24
+    3300036: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface25
+    3300038: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface26
+    3300040: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface31
+    3300042: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface5
+    3300044: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface8
+    4300000: default
+    4300002: THL:Mesh
+    4300004: polySurface1_THL:Mesh
+    4300006: THL:Mesh_polySurface2
+    4300008: THL:Mesh_polySurface3_polySurface5
+    4300010: THL:Mesh_polySurface4_polySurface3
+    4300012: THL:Mesh_THL:polySurface2_polySurface27
+    4300014: THL:Mesh_THL:polySurface2_polySurface31
+    4300016: THL:Mesh_THL:polySurface3_polySurface29
+    4300018: THL:Mesh_THL:polySurface3_polySurface31
+    4300020: THL:Mesh_THL:polySurface4_THL:polySurface5_polySurface3
+    4300022: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface13
+    4300024: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface15
+    4300026: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface17
+    4300028: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface18
+    4300030: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface20
+    4300032: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface22
+    4300034: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface24
+    4300036: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface25
+    4300038: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface26
+    4300040: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface31
+    4300042: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface5
+    4300044: THL:Mesh_THL:polySurface5_THL:polySurface6_polySurface8
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 0
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 180
+    normalImportMode: 2
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
