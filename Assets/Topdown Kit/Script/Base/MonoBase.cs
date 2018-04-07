@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Topdown_Kit.Script.MVC;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +7,20 @@ using UnityEngine;
 public class MonoBase {
 
     private Dictionary<string, object> eventDict = new Dictionary<string, object>();
+    private AudioManager _audioManager = AppFacade.Instance.GetManager<AudioManager>( "AudioManager" );
+    public GameObject UI { get; set; }
 
-    protected GameObject findUISprite(string path) {
-        //GameObject sprite = GameObject.
-            return null;
+    protected UISprite FindUISprite(string path) {
+        return UI.transform.Find( path ).GetComponent<UISprite>();
     }
 
-    protected void AddClick(GameObject go, Action<GameObject> callBack = null ) {
+    protected UILabel FindUILabel(string path ) {
+        return UI.transform.Find( path ).GetComponent<UILabel>();
+    }
+
+    protected void AddClick(GameObject go, Action<GameObject> callBack ) {
         GOUtil.AddClick( go, delegate ( GameObject o ) {
+            _audioManager.Play( "Audio/ButtonClick" );
             if ( callBack != null) {
                 callBack( go );
             }
@@ -25,5 +32,7 @@ public class MonoBase {
         GOUtil.AddChild( parentGo, childGo );
     }
 
-
+    public virtual void Dispose() {
+        eventDict.Clear();
+    }
 }

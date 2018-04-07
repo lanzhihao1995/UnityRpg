@@ -146,7 +146,7 @@ public class HeroController : MonoBehaviour {
 			skillRange = 0;
 		}
 		
-		if(Physics.Raycast(r, out h ,100, 1 << layerActiveEnemy | 1 << layerActiveGround | 1 << layerActiveItem | 1 << layerActiveNpc)){
+		if(Physics.Raycast(r, out h ,100, 1 << layerActiveEnemy | 1 << layerActiveGround | 1 << layerActiveItem | 1 << layerActiveNpc) ) {
 			
 			if(h.collider != null)
 			{
@@ -381,6 +381,8 @@ public class HeroController : MonoBehaviour {
 	//Movement Method
 	void ClickToMove()
 	{
+        if ( UICamera.isOverUI == true )  //点击到UI则不进行下面的判断
+            return;
 		if(useFreeSkill && useSkill && getSkillTarget)
 		{
 			destinationDistance = Vector3.Distance(destinationPosition, this.transform.position); //Check Distance Player to Destination Point

@@ -14,6 +14,12 @@ public class Global  {
         }
     }
 
+    private static int _id = 0;
+    public static int EventId {
+        get {
+            return _id++;
+        }
+    }
 
     //private static int _eventId = 0;
     //public static int EventId {

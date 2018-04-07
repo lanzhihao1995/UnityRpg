@@ -7,6 +7,8 @@ public class GameManager : Manager {
 
     //public GameObject _uiRoot;
 
+    
+
     //初始化游戏
     void Awake() {
         InitUIRoot();
@@ -19,6 +21,18 @@ public class GameManager : Manager {
 
     private void Start() {
         GameController.Login.ShowOrHide();
+        Dispatcher.AddEventListener( EventName.SceneLoaded, this.SceneLoaded );
+        Dispatcher.AddEventListener( EventName.EntityCreate, this.InitEntity );
+    }
+
+    void SceneLoaded(DataEvent evt ) {
+        if( (string)evt._data == "Dreamdev Village" ) {
+            GameController.MainUI.ShowOrHide();
+        }
+    }
+
+    void InitEntity( DataEvent evt ) {
+        Cache.Init();
     }
 
     /// <summary>
@@ -41,5 +55,9 @@ public class GameManager : Manager {
         GameController.Init();
         LayerManager.Init();
         ObjectPool.Init();
+        ModuleTypes.Init();
+
+        GameObject pool = GameObject.Find( "ObjectPool" );
+        DontDestroyOnLoad( pool );
     }
 }

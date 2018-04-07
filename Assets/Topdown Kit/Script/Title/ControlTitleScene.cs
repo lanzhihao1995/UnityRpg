@@ -24,7 +24,8 @@ public class ControlTitleScene : MonoBehaviour {
 		//Set default variable
 		alpha = 0.5f;
 		whiteScreen.SetActive(true);
-	
+
+        buttonSound = Resources.Load( "Audio/ButtonClick" ) as AudioClip;
 	}
 	
 	// Update is called once per frame

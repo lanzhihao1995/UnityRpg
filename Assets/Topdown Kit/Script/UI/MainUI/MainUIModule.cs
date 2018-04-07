@@ -11,12 +11,18 @@ public class MainUIModule : BaseView {
         this.layer = LayerManager.MainUI;
     }
 
-    public override void Show( string res_path = null ) {
-        base.Show( "UI/MainUI/MainUIModule" );
+    protected override string AssetPath {
+        get {
+            return "UI/MainUI/MainUIModule";
+        }
     }
 
-    protected override void LoadCallBack() {
-        base.LoadCallBack();
+    public override void Show() {
+        base.Show();
+    }
+
+    protected override void PrefabLoaded() {
+        base.PrefabLoaded();
 
         CellData cellData = new CellData();
         cellData.go = GameObject.Find( "RightBottom/Grid" );

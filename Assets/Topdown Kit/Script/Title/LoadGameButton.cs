@@ -60,6 +60,8 @@ public class LoadGameButton : MonoBehaviour {
 		
 	void LoadScene()
 	{
-		Application.LoadLevel(loadSceneName);;	
-	}
+        Global.SceneName = "Dreamdev Village";
+        SceneCtrl.LoadScene();
+        //Application.LoadLevel(loadSceneName);;	
+    }
 }

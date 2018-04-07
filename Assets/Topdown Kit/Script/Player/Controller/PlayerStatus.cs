@@ -79,8 +79,10 @@ public class PlayerStatus : MonoBehaviour {
 		expMax = startExp * status.lv *multipleExp;
 		Invoke("SettingStatus",0.1f);
 		alreadyApply = true;
-	
-	}
+
+        Dispatcher.DispatchEvent( EventName.EntityCreate );
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

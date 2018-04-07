@@ -8,7 +8,7 @@ public interface IView{
     /// 显示界面
     /// </summary>
     /// <param name="res_path">资源路径</param>
-    void Show( string res_path = null );
+    void Show();
     /// <summary>
     /// 隐藏界面
     /// </summary>

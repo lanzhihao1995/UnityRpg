@@ -9,12 +9,17 @@ public class LoginModule : BaseView {
     public LoginModule() {
         this.layer = LayerManager.Window;
     }
-
-    public override void Show(string path = null) {
-        base.Show("UI/Login/LoginModule");
+    protected override string AssetPath {
+        get {
+            return "UI/Login/LoginModule";
+        }
     }
 
-    protected override void LoadCallBack() {
+    public override void Show() {
+        base.Show();
+    }
+
+    protected override void PrefabLoaded() {
         _btnEnter = GameObject.Find( "LoginBtn" );
 
 

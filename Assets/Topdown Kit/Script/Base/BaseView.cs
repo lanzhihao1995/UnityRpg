@@ -6,26 +6,45 @@ using UnityEngine;
 public class BaseView : MonoBase, IView {
 
     protected UIManager _uiManager;
-    public GameObject UI { get; set; }
     protected bool isHide = true;
     protected int layer;
     protected GameObject _parent;
+    private string _assetPath;
+    private GameObject _maskGo;
+    protected bool _isClickAnyClose = false;
+    protected bool _isNotClickAnyArea = false;
 
-    public virtual void Show( string res_path = null ) {
+    public virtual void Show() {
         _uiManager = AppFacade.Instance.GetManager<UIManager>( "UIManager" );
-        _uiManager.LoadUIGameObject( res_path, layer, delegate ( GameObject go ) {
+        _uiManager.LoadUIGameObject( AssetPath, layer, delegate ( GameObject go ) {
             UI = go;
             isHide = false;
-            LoadCallBack();
+            PrefabLoaded();
             if(_parent != null ) {
                 base.AddChild( this._parent, this.UI );
             }
+            
         } );
+        if ( _isNotClickAnyArea ) {
+            _uiManager.LoadUIGameObject( "UI/Public/Mask", LayerManager.None, delegate ( GameObject go ) {
+                _maskGo = go;
+                base.AddChild( UI, _maskGo );
+            } );
+        }
+    }
+
+    protected virtual string AssetPath {
+        get {
+            return _assetPath;
+        }
+        set {
+            _assetPath = value;
+        }
     }
 
     public void Hide() {
         if ( !isHide ) {
-            this.Dispose();
+            Dispose();
         }
     }
 
@@ -35,7 +54,7 @@ public class BaseView : MonoBase, IView {
         }
     }
 
-    protected virtual void LoadCallBack() {
+    protected virtual void PrefabLoaded() {
 
     }
 
@@ -46,10 +65,14 @@ public class BaseView : MonoBase, IView {
         }
     }
 
-    public void Dispose() {
+    public override void Dispose() {
+        base.Dispose();
         ObjectPool.Push( this.UI );
+        if (this._maskGo != null )
+            ObjectPool.Push( this._maskGo );
         _uiManager = null;
         this.UI = null;
+        this._maskGo = null;
         this.isHide = true;
     }
 

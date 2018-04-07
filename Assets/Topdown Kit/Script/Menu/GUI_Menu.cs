@@ -851,14 +851,15 @@ public class GUI_Menu : MonoBehaviour {
 	/// </summary>
 	private void ShowInventory(){
 		if(inventory[0].openInventory){
-			if(useStyle){
-				GUI.SetNextControlName("Inventory");
-				inventory[0].windowInventoryRect = GUI.Window(inventory[0].windowInventoryID, inventory[0].windowInventoryRect, FunctionWindow, inventory[0].nameWindow, guiStyleGroup[0].windowInventoryStyle);
-			}else{
-				GUI.SetNextControlName("Inventory");
-				inventory[0].windowInventoryRect = GUI.Window(inventory[0].windowInventoryID, inventory[0].windowInventoryRect, FunctionWindow, inventory[0].nameWindow);
-			}
-		}
+            if ( useStyle ) {
+                GUI.SetNextControlName( "Inventory" );
+                inventory[0].windowInventoryRect = GUI.Window( inventory[0].windowInventoryID, inventory[0].windowInventoryRect, FunctionWindow, inventory[0].nameWindow, guiStyleGroup[0].windowInventoryStyle );
+            }
+            else {
+                GUI.SetNextControlName( "Inventory" );
+                inventory[0].windowInventoryRect = GUI.Window( inventory[0].windowInventoryID, inventory[0].windowInventoryRect, FunctionWindow, inventory[0].nameWindow );
+            }
+        }
 	}
 	
 	/// <summary>
